@@ -1,0 +1,62 @@
+body {
+  //background-color: silver;
+  height: 100vh;
+  background: url(/img/back.jpeg) no-repeat center bottom;
+  background-size: cover;
+}
+
+.to-do-list-container {
+  margin: 0 auto;
+    margin-top: 25px;
+    max-width: 750px;
+  }
+  
+  .to-do-list-item {
+    margin-top: 10px;
+    color: white;
+    transition: background-color 1s;
+  }
+  
+  .to-do-list-item h4 {
+    padding-left: 25px;
+    padding-bottom: 5px;
+  }
+  
+  .to-do-list-item:hover {
+    background-color: #f50057 !important;
+  }
+  
+  .complete-todo-item {
+    float: right;
+    top: -5px;
+  }
+  
+  #todo-add-form {
+    animation-duration: 1s;
+    animation-name: slidein;
+    i {
+      position: relative;
+      left: -30px;
+      top: 55px;
+    }
+  }
+  
+  #nothing-was-found {
+    margin-top: 150px;
+  }
+  
+  @keyframes slidein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      margin-left: 1;
+    }
+  }
+
+  .signup-container {
+    max-width: 500px;
+    text-align: center;
+    margin-top: 5%;
+  }
